@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Encriptador chacha20</title>
+  <link rel="stylesheet" href="ca/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Red Rose' rel='stylesheet'>
+</head>
+
+<body>
+  <script src='ca/ca.js'></script>
+  <div class="btn">
+      <button id="b1" class="b1" type="button" onclick="generar()">
+        <p>GENERAR</p>
+      </button>
+  </div>
+
+  <div class="aviso">
+    <h3>¡Doble  click!</h3>
+  </div>
+
+  <div class="datos">
+    <form>
+      <p>
+      ID: <input id="ID" type="text"/>
+      <br>
+      Longitud de la secuencia de salida: 
+      <input id="LonSalida" type="text"/>
+      <br>
+      <br>
+      </p>
+    </form>
+  </div>
+
+  <div id="salidas" class="salidas">
+    <h4> 
+    Salida:
+    </h4>
+    <h5>(LSFR1 | R1 | LSFR2 | R2 | SEC)</h5>
+    <h5 id="salida"></h5>
+    <h4>
+      Secuencia final:
+      </h4>
+      <h5 id="secuencia"></h5>
+  </form>
+</div>
+
+</body>
+
+
+</html>
